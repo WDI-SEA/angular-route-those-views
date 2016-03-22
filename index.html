@@ -7,17 +7,43 @@
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+	<link href='https://fonts.googleapis.com/css?family=Satisfy|Permanent+Marker|Just+Me+Again+Down+Here' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+	<script src="/libs/angular-css/angular-css.min.js"></script>
+
 	<script src="/js/app.js"></script>
 	<script type="text/javascript" src="/js/controllers.js"></script>
 </head>
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	      <li><a href="/#/">Home</a></li>
+	        <li><a href="/#/facts">Boss Facts</a></li>
+	        <li><a href="/#/videos">Hot Videos</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
 	<div class="container">
 		<div ui-view>
-			
+			<h1 id="h1-main-page">Bruce<br/>Springsteen</h1>
 		</div>
 	</div>
 </body>

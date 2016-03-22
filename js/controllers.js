@@ -7,7 +7,7 @@ angular.module("BossControlls", [])
 		$scope.facts = [
 			{	
 				header: "His only #1 hit came from someone else covering him",
-				body: "The closest he came to #1 was with 1984's Dancing in the Dark, which peaked at #2 on the Billboard Hot 100. While he never topped the charts, Manfred Mann did get to #1 with a cover of Springsteen's Blinded by the Light.",
+				body: "The closest he came to #1 was with 1984's 'Dancing in the Dark', which peaked at #2 on the Billboard Hot 100. While he never topped the charts, Manfred Mann did get to #1 with a cover of Springsteen's 'Blinded by the Light'.",
 				source: "http://uproxx.com/media/bruce-springsteens-only-1-hit-came-when-another-band-covered-him-and-other-facts-about-the-boss/"
 			},
 			{

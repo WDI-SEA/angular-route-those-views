@@ -26,7 +26,7 @@ angular.module("BruceSpringsteenApp", ["BossControlls", "ui.router"])
 			"videos",
 			{
 				url:"/videos",
-				templateUrl: "views/videos.html"
+				templateUrl: "views/videos.html",
 			}
 		);
 	}
