@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Careless';
+  src: url('careless.ttf');
+}
+
+body {
+  background-color: #e6e6e6
+}
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#title {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  font-size: 105px;
+  font-family: 'Careless';
+}
+
+img.about-pic {
+  height: 300px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.album-cover {
+  margin-top: 2em;
+  height: 350px;
+  width: 350px;
+}
+
+div.disco {
+  margin-bottom: 2em;
+}
