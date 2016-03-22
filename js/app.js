@@ -8,18 +8,25 @@ app.config([
 
     //define routes
     $stateProvider.state(
+      "index",
+      {
+        url: "/",
+        templateUrl: "views/index.html"
+      }
+    )
+    .state(
       "players",
       {
         url: "/players",
-        templateUrl: "views/players.html",
-        controller: "PlayersCtrl"
+        templateUrl: "views/players.html"
       }
     )
     .state(
       "showPlayer",
       {
         url: "/players/:id",
-        templateUrl: "views/playerShow.html"
+        templateUrl: "views/playerShow.html",
+        controller: "PlayersShowCtrl"
       }
     );
   }
