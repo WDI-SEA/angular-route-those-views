@@ -1,0 +1,17 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+#teamPhoto {
+  height: 600px; 
+  width: 464px;
+}
+
+body { 
+  padding-top: 40px; 
+}
+
+li {
+  padding-top: 5px;
+}

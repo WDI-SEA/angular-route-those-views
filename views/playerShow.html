@@ -1,0 +1,30 @@
+<div class="col-sm-4">
+  <h2>#{{ player.number }} - {{ player.name }}</h2>
+  <h3>Position</h3>
+  <ul>
+    <li>
+      <h4>{{ player.position }}</h4>
+    </li>
+  </ul>
+  <h3>Height</h3>
+  <ul>
+    <li>
+      <h4>{{ player.height }}</h4>
+    </li>
+  </ul>
+  <h3>Weight</h3>
+  <ul>
+    <li>
+      <h4>{{ player.weight }} pounds</h4>
+    </li>
+  </ul>
+  <h3>Year</h3>
+  <ul>
+    <li>
+      <h4>{{ player.year }}</h4>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-8">
+  <img ng-src="{{ player.img }}">
+</div>
