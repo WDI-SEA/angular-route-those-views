@@ -23,5 +23,11 @@ angular.module("WavvesApp", ["WavvesCtrls", "ui.router"])
           url:"/discography",
           templateUrl: "views/discography.html"
         })
+      .state("allshows",
+        {
+          url: "/shows",
+          templateUrl: "views/tour.html",
+          controller: "ShowsCtrl"
+        })
     }
   ]);
