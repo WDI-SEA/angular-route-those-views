@@ -1,0 +1,70 @@
+body {
+	font-family: Courier;
+	background-image: url("http://all4desktop.com/data_images/original/4248089-cloud.jpg");
+	background-size: cover;
+	color: white;
+}
+.title {
+	color: yellow;
+}
+.right {
+	text-align: center;
+	font-size: 16px;
+}
+.eschaton {
+	animation: bounceIn 1.5s;
+}
+.animate {
+	animation: rollIn 1.5s;
+}
+.animate2 {
+	animation: fadeInRight 1.5s;
+}
+.animatehome {
+	animation: rotateInDownLeft 1.5s;
+}
+.navbar {
+	background-color: transparent;
+}
+.navbar a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active{
+    color: transparent;
+   background: transparent;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+      color: transparent;
+      background: transparent;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.text { 
+	padding-left: 90px;
+	padding-right: 90px;
+	position: absolute; 
+	top: 100px; 
+	left: 0; 
+	width: 100%; 
+}
+.text span { 
+	color: white; 
+	font-weight: normal;;
+	font-size: 16px;  
+	padding: 10px; 
+	background: rgba(0, 0, 0, 0.7);
+}
+.text span.spacer {
+   padding:0 5px;
+}
+
+
+
+
