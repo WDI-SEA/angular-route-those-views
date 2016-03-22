@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="well" id="facts" ng-repeat="fact in facts track by $index">
+		<h1 id="facts-header">{{ fact.header }}</h1>
+		<hr />
+		<p id="facts-body">{{ fact.body }}</p>
+		<br />
+		<p id="facts-source"><a href="{{ fact.source }}">Source: {{ fact.source }}</a></p>
+	</div>
+</div>
