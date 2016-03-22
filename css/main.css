@@ -1,0 +1,92 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#about {
+  margin-right: 7%;
+  overflow: hidden;
+  padding: 60px;
+  text-align: center;
+}
+
+#aboutPage {
+  display: inline;
+  margin: 7%;
+}
+
+body {
+  background-color: beige;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+#DMU-Pic, #HM-Pic, #RD-Pic {
+  max-width: 400px;
+  border-color: 2px solid black;
+}
+
+.project {
+  display: -webkit-inline-box;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+#lIgHLinks {
+  display: -webkit-inline-box;
+}
+
+#lIgHLinks p {
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  background-color: pink;
+  height: 50px; 
+  text-align: center;
+}
+
+#imgContainer {
+  float: left;
+  margin-left: 7%;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+#mainPage {
+  font-family: 'Handlee', cursive;
+  margin-top: 10%;
+  text-align: center;
+}
+
+#nav {
+  display: inline-block;
+  font-family: 'Handlee', cursive;
+  margin: 20px;
+}
+
+#nav a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#portfolioPic {
+  border-radius: 5%;
+  clear: right;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+#projectsContainer {
+  margin-top: 3%;
+  padding-left: 4%;
+}
+
+.projectTitle {
+  font-size: 25px;
+}
