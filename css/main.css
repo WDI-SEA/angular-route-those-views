@@ -1,0 +1,10 @@
+.navbar {
+
+    height: 115px;
+}
+.brand {
+    position: absolute;
+    left: 50%;
+    display: block;
+}
+
