@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+div[ui-view] {
+	height: calc(100% - 50px);
+	width: 100%;
+}
+
+#home {
+	background-image: url(http://www.microcuts.net/gallery/data/media/82/wallpaper-muse.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-position-y: -65px;
+	background-position-x: 13px;
+	background-color: black;
+}
+
+.opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-size: cover;
+	overflow:scroll;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+]
+
+#home h1 {
+	text-align: center;
+}
+
+img {
+	margin: 0 auto;
+}
+
+#about {
+	background-image: url(https://godsavetherock.files.wordpress.com/2012/10/bg5.jpg);
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#about {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+#about h1 {
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+#about img {
+	height: 350px;
+	width: 400px;
+}
+
+#about p {
+	color: white;
+	display: inline-block;
+	text-align: justify;
+	font-size: 15px
+}
+
+#albums {
+	background-image: url(http://fullhdpictures.com/wp-content/uploads/2015/10/Galaxy-Background.jpg);
+	background-color: black;
+	overflow: scroll;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#albums {
+	text-align: center;
+}
+
+#albums h1 {
+	text-align: center;
+}
+
+#albums img {
+	height: 500px;
+	width: 500px;
+	margin: 15px;
+}
+
+#albums p#albumimage {
+	margin: 0;
+	text-align: center;
+	
+}
+
+
+#albums p#albumimage img {
+	text-align: center;
+	height: initial;
+
+
+}
+
