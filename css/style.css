@@ -1,0 +1,107 @@
+body{
+	background-color: #d2d5d7 !important;
+}
+
+.navbar{
+	background-color: #002244 !important;
+}
+
+.navbar-brand{
+	color: #fff !important;
+}
+
+.title{
+	font-size: 2em !important;
+}
+
+.story{
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 2px 1px #999;
+}
+
+.story_text{
+	padding: 5% 5% !important;
+}
+
+.title:hover{
+	font-size: 2.5em !important;
+	color: #69BE28 !important;
+}
+
+.char{
+	margin-bottom: 0;
+	text-shadow: 2px 2px #999;
+    margin-right: -8px;
+    font-size: 5em;
+    font-family: 'Parisienne', cursive;
+    line-height: 1;
+}
+
+.me{
+	float: left;
+	border: 5px solid #f5f5f5;
+	box-shadow: 10px 5px #999;
+	border-radius: 40%;
+	-webkit-shape-outside:circle();
+  	shape-outside:circle();
+  	margin: 0 90px 0 25px;
+}
+
+.navbar-right{
+	width: 350px !important;
+}
+
+
+.contact_title{
+	text-decoration: underline;
+}
+
+.nav li{
+	margin-right: 2% !important;
+}
+
+.projects, .contact{
+	float: none !important;
+	margin: 0 auto;
+	text-align: center
+}
+
+.project_title{
+	text-align: center;
+}
+
+.summary_text {
+	font-family: 'Cabin Condensed', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 3;
+    margin-top: 5%;
+    padding-right: 2%;
+}
+
+.navbar-nav{
+	width: 400px !important;
+}
+
+.links a{
+	color: #fff !important;
+	text-decoration: underline;
+}
+
+.links a:hover{
+	font-size: 1.5em;
+	text-decoration: none !important;
+	color: #69BE28 !important;
+}
+
+@media screen and (min-width: 350px) and (max-width: 700px){
+
+.summary_text{
+	float: left;
+	margin-top: 0;
+	padding: 2%;
+}
+
+}
