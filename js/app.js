@@ -22,7 +22,4 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 
 }]);
 
-// myApp.controller('MainCtrl', ['$scope', function($scope) {
-//   console.log('in the main controller');
-// }]);
 

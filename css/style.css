@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  background-image: url('img/dedMoot.jpg');
+}
+
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.audio {
+  float: right;
+  margin-right: 90px;
+}
