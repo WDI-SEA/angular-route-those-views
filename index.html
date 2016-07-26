@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+
+  <!-- Angular and JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="js/routing.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/AboutCtrl.js"></script>
+    <script src="js/controllers/ContactCtrl.js"></script>
+    <script src="js/controllers/DanceCtrl.js"></script>
+    <script src="js/controllers/DesignCtrl.js"></script>
+    <script src="js/controllers/WebDevelopmentCtrl.js"></script>
+  <title>Jamie Karlovich</title>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+
+<body ng-app="myApp" class="myApp">
+
+<div class="header">
+  <h1>Jamie Karlovich</h1>
+
+  <nav class="nav">
+    <a href="/#/">Home</a>
+    <a href="/#/dance">Dance</a>
+    <a href="/#/design">Design</a>
+    <a href="/#/webdevelopment">Web</a>
+    <a href="/#/about">About</a>
+    <a href="/#/contact">Contact</a>
+  </nav>
+</div>
+  <div ui-view class="container"></div>
 </body>
 </html>

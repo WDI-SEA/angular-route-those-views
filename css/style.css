@@ -1,0 +1,65 @@
+@import url(http://www.1001fonts.com/monitorica-font.html);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+html{
+  margin:0;
+  padding: 0;
+  height: 100%;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  height: 200px;
+  width:100%;
+  background-color:rgba(7, 7, 7, 0.86);
+  color:white;
+  margin: 0;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+
+.header h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100px;
+  margin: 20px 40px 0 auto;
+  padding: 0 0 0 auto;
+}
+
+h1 {
+  font-family:  "Monitorica Regular", sans-serif;
+  font-weight: 200;
+
+}
+
+nav {
+    margin: 0 40px 0 0;
+}
+
+nav a {
+  font-family: "Monitorica Regular", sans-serif;
+  text-decoration: none;
+  display:inline-block;
+  padding: 0 10px;
+  color:white;
+}
+
+nav a:hover {
+  color: grey;
+  text-decoration:none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.subnav a{
+  color:black;
+}
