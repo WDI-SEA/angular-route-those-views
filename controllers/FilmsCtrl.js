@@ -8,10 +8,10 @@ app.controller('FilmsCtrl', ['$scope', 'FilmsFactory', function($scope, FilmsFac
     FilmsFactory.query(function success(data) {
       $scope.films = data.results;
 
-      // attempts to loop through characters in each film
+      // loops through characters in each film
 
-      // $scope.characters = data.results[6];
-      // console.log('***** ', characters)
+      $scope.characters = data.results.characters;
+      console.log('***** ', $scope.characters)
 
       $scope.loading = false;
     });

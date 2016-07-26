@@ -13,13 +13,13 @@
   <h2>{{ film.title }}</h2>
   <h4>Directed by: {{ film.director }}</h4>
 
-    <!-- attempts to loop through characters within films, even though it'd only return a url
+    <!-- returns a link to each character's page. Not sure who each one is, hence 'Mystery' -->
 
     <p>Characters: <br>
     <span ng-repeat="character in film.characters">
-      {{ character.characters }}</span></p>
+      <a href="{{ character }}">Mystery</a></span></p>
 
-      -->
+
 
   <p>{{ film.opening_crawl }}</p>
 </div>
