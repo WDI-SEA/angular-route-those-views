@@ -7,7 +7,12 @@ body {
 /* --------------- */
 
 .header {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+  padding-top: 20px;
+  background-color: white;
+  height: 80px;
+  border-bottom: 3px solid #dadada;
+  margin-bottom: 60px;
 }
 
 .links li{
@@ -15,7 +20,7 @@ body {
   display: inline;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
-  /*font-size: 10pt;*/
+  font-size: 16pt;
   text-decoration: none;
   color: #272727 !important;
 }
@@ -30,6 +35,16 @@ body {
   align-content: flex-start
 }
 
+.max-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .projects {
   margin: 20px;
+  color: #4c4c4c;
+}
+
+.subtitle {
+  margin-top: 10px;
 }

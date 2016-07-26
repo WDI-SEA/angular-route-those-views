@@ -3,16 +3,16 @@ var app = angular.module('Portfolio', ['ui.router']);
 app.controller('MainCtrl', ['$scope', function($scope) {
   // $scope.text = 'main page';
   $scope.projects = {
-    '1': 'one',
-    '2': 'two',
-    '3': 'three',
-    '4': 'four',
-    '5': 'five',
-    '6': 'six',
-    '7': 'seven',
-    '8': 'eight',
-    '9': 'nine',
-    '10': 'ten'
+    '1': 'Project One',
+    '2': 'Project Two',
+    '3': 'Project Three',
+    '4': 'Project Four',
+    '5': 'Project Five',
+    '6': 'Project Six',
+    '7': 'Project Seven',
+    '8': 'Project Eight',
+    '9': 'Project Nine',
+    '10': 'Project Ten'
   }
 }])
 

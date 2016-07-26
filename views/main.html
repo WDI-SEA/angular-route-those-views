@@ -1,6 +1,8 @@
-
-<div class="flex small-12 columns text-center">
-  <div class="projects" ng-repeat="(key, project) in projects track by $index">
-    <img src="img/{{key}}.png" alt="">
+<div class="max-width">
+  <div class="flex small-12 columns text-center">
+    <div class="projects" ng-repeat="(key, project) in projects track by $index">
+      <img src="img/{{key}}.png" alt="">
+      <div class="subtitle">{{project}}</div>
+    </div>
   </div>
 </div>
