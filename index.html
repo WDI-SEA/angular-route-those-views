@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Angular Mock Up App</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/omdb.js"></script>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+<body ng-app="myApp">
+  <ul id="navbar">
+    <li><a href="/#/main">Home</a></li>
+    <li><a href="/#/about">About</a></li>
+    <li><a href="/#/contact">Contact</a></li>
+    <li><a href="/#/api">Movie Api</a></li>
+  </ul>
+  <div class="container">
+    <div ui-view></div>
+  </div>
 </body>
 </html>
