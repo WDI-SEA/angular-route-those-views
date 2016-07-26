@@ -7,6 +7,12 @@ app.controller('FilmsCtrl', ['$scope', 'FilmsFactory', function($scope, FilmsFac
     $scope.loading = true;
     FilmsFactory.query(function success(data) {
       $scope.films = data.results;
+
+      // attempts to loop through characters in each film
+
+      // $scope.characters = data.results[6];
+      // console.log('***** ', characters)
+
       $scope.loading = false;
     });
   };

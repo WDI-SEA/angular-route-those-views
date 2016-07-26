@@ -1,10 +1,12 @@
+//Declare Angular App
 var app = angular.module('StarWarsApp', ['ngResource', 'ui.router']);
 
+//Declares routes and states
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-  .state('mains', {
+  .state('main', {
     url: '/',
     templateUrl: 'views/main.html',
     controller: 'MainCtrl'
@@ -26,6 +28,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
   });
 }]);
 
+//API call goes in factory, using $resource
 app.factory('FilmsFactory', ['$resource', function($resource) {
   return $resource('http://swapi.co/api/films/:id', {}, {
     query: { isArray: false }
