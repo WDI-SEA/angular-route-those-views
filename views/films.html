@@ -1,0 +1,15 @@
+<div>
+        <input type="integer" ng-model="movieId">
+        <button ng-click="getMovie(movieId)">Get</button>
+        <button ng-click="getAll()">All</button>
+</div>
+
+<div ng-if="loading">
+    Loading...
+</div>
+
+<div ng-if="!loading" class="well" ng-repeat="film in films">
+    <h2>{{ film.title }}</h2>
+    <h4>Directed by: {{ film.director }}</h4>
+    <p>{{ film.opening_crawl }}</p>
+</div>
