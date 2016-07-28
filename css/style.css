@@ -1,0 +1,66 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.centered {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  /*padding-top: 15%;*/
+}
+
+.fullPage {
+  width: 100%;
+  height: 100rem;
+  position: fixed;
+}
+
+#hero {
+  width: 100%;
+  height: 100rem;
+  position: fixed;
+}
+
+.heroImg {
+  /*max-height: 100rem;*/
+  height: 100%;
+  background-image: url(/img/TeslaPowerWall.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.heroImg div {
+  /*height: 100rem;*/
+}
+
+.heroHeader {
+  margin: auto;
+  margin-top: 15%;
+  position: relative;
+  background-color: #A9A9A9;
+  opacity: 0.7;
+  border-radius: 10px;
+  /*padding-top: 15%;*/
+}
+
+.teslaImg {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  /*position: absolute;*/
+  background-repeat: no-repeat;
+}
+
+.aboutTeslaImg {
+  background-image: url(https://timedotcom.files.wordpress.com/2016/07/gettyimages-492682160.jpg);
+}
+
+.contactTeslaImg {
+  background-image: url(http://home.bt.com/images/everything-you-need-to-know-about-elon-musks-tesla-master-plan-part-2-136407480793003901-160721125028.jpg);
+}
+
+.navbar-default {
+  margin-bottom: 0px;
+}
