@@ -11,13 +11,11 @@ body {
 /*      Header     */
 /* --------------- */
 
-.header {
-  /*margin-top: 40px;*/
+/*.header {
   padding-top: 20px;
   background-color: white;
   height: 80px;
   border-bottom: 3px solid #dadada;
-  margin-bottom: 60px;
 }
 
 .links li{
@@ -28,7 +26,60 @@ body {
   font-size: 16pt;
   text-decoration: none;
   color: #272727 !important;
+}*/
+
+.top-text {
+  margin: 100px 0 50px 0;
 }
+
+.top-text h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5pt;
+}
+
+.top-text h5 {
+  font-family: 'Raleway', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*.header-img {
+  height: 500px;
+  overflow-y: hidden;
+  margin-bottom: 40px;
+}
+
+.header-img img {
+  width: 100%;
+}*/
+
+/* --------------- */
+/*     Footer      */
+/* --------------- */
+/*
+.footer-parent {
+  position: relative;
+}*/
+/*.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid #eaeaea;
+  height: 40px;
+}*/
+
+.links li{
+  margin-right: 20px;
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 14pt;
+  text-decoration: none;
+  color: #272727 !important;
+}
+
 
 /* --------------- */
 /*     Projects    */
@@ -37,15 +88,28 @@ body {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   /*align-content: flex-start;*/
   align-content: flex-start;
+  margin-bottom: 100px;
 }
 
 .projects {
   margin: 5px;
   color: #4c4c4c;
 }
+
+@media (min-width: 990px) {
+  .front img {
+    width: 310px;
+  }
+  .flip-container, .front, .back {
+    width: 310px;
+    height: 232px;
+  }
+
+}
+
 /*
 .subtitle {
   padding-top: 10px;

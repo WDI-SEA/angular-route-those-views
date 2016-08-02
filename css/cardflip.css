@@ -7,9 +7,11 @@
   transform: rotateY(180deg);
 }*/
 
-.flip-container, .front, .back {
-  width: 200px;
-  height: 150px;
+@media (max-width: 989px) {
+  .flip-container, .front, .back {
+    width: 200px;
+    height: 150px;
+  }
 }
 
 /* flip speed goes here */
