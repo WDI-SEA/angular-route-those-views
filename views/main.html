@@ -1,8 +1,24 @@
+
+
 <div class="max-width">
   <div class="flex small-12 columns text-center">
     <div class="projects" ng-repeat="(key, project) in projects track by $index">
-      <img src="img/{{key}}.png" alt="">
-      <div class="subtitle">{{project}}</div>
+
+      <div class="flip-container" onclick="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <!-- front content -->
+            <img src="http://placehold.it/{{project.img}}" alt="">
+          </div>
+          <div class="back">
+            <!-- back content -->
+            <div class="subtitle">{{project.title}}</div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </div>

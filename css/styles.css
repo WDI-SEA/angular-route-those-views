@@ -2,6 +2,11 @@ body {
   background: url('../img/white_wall_hash.png');
 }
 
+.max-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* --------------- */
 /*      Header     */
 /* --------------- */
@@ -32,19 +37,17 @@ body {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start
-}
-
-.max-width {
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: space-around;
+  /*align-content: flex-start;*/
+  align-content: flex-start;
 }
 
 .projects {
-  margin: 20px;
+  margin: 5px;
   color: #4c4c4c;
 }
-
+/*
 .subtitle {
-  margin-top: 10px;
-}
+  padding-top: 10px;
+  background-color: white;
+}*/

@@ -1,19 +1,20 @@
 var app = angular.module('Portfolio', ['ui.router']);
 
-app.controller('MainCtrl', ['$scope', function($scope) {
-  // $scope.text = 'main page';
-  $scope.projects = {
-    '1': 'Project One',
-    '2': 'Project Two',
-    '3': 'Project Three',
-    '4': 'Project Four',
-    '5': 'Project Five',
-    '6': 'Project Six',
-    '7': 'Project Seven',
-    '8': 'Project Eight',
-    '9': 'Project Nine',
-    '10': 'Project Ten'
+app.factory('projects', function() {
+  return {
+    'tmp/1': {img: '200x150',title: 'Project 1'},
+    'tmp/2': {img: '200x150',title: 'Project 2'},
+    'tmp/3': {img: '200x150',title: 'Project 3'},
+    'tmp/4': {img: '200x150',title: 'Project 4'},
+    'tmp/5': {img: '200x150',title: 'Project 5'},
+    'tmp/6': {img: '200x150',title: 'Project 6'},
+    'tmp/7': {img: '200x150',title: 'Project 7'},
+    'tmp/8': {img: '200x150',title: 'Project 8'}
   }
+})
+
+app.controller('MainCtrl', ['$scope', 'projects', function($scope, projects) {
+  $scope.projects = projects;
 }])
 
 app.controller('ProjectsCtrl', ['$scope', function($scope) {
