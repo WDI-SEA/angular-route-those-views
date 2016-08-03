@@ -83,7 +83,7 @@ body {
   color: #4c4c4c;
 }
 
-@media (min-width: 990px) {
+/*@media (min-width: 990px) {*/
   .front img {
     width: 310px;
   }
@@ -92,12 +92,21 @@ body {
     height: 232px;
   }
 
+/*}*/
+
+/* ------- Effects --------- */
+
+.flipper .front {
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2)) !important;
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2)) !important;
+}
+.flipper .back {
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.1)) !important;
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.1)) !important;
 }
 
 /* Greyscale images - color when hovered on*/
 .front img {
-  /*-webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.4)) !important;
-  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.4)) !important;*/
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;

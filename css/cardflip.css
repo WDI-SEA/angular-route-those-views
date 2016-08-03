@@ -7,12 +7,12 @@
   transform: rotateY(180deg);
 }*/
 
-@media (max-width: 989px) {
+/*@media (max-width: 989px) {
   .flip-container, .front, .back {
     width: 200px;
     height: 150px;
   }
-}
+}*/
 
 /* flip speed goes here */
 .flipper {
