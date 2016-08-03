@@ -24,7 +24,12 @@ app.factory('projects', function() {
 
     '6': {title: 'Project 6',           cover: 'project/tmp.png',
           img: [''],
-          desc: 'Lorem Ipsum'}
+          desc: 'Lorem Ipsum'},
+
+    '7': {title: 'About Me',            cover: 'project/tmp.png',
+          info: true,
+          infoColor: {backgroundColor: '#e2da6c'}
+          }
   }
 })
 

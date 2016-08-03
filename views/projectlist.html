@@ -4,9 +4,9 @@
 
       <div class="flip-container" onclick="this.classList.toggle('hover');">
         <div class="flipper">
-          <div class="front">
+          <div class="front" ng-style="project.infoColor">
             <!-- front content -->
-            <img src="img/{{project.cover}}" alt="">
+            <img src="img/{{project.cover}}" ng-hide="project.info" alt="">
           </div>
           <div class="back">
             <!-- back content -->
