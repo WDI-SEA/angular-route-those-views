@@ -96,18 +96,20 @@ body {
 
 /* Greyscale images - color when hovered on*/
 .front img {
+  /*-webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.4)) !important;
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.4)) !important;*/
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;
-  -moz-filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -moz-filter: grayscale(0.5);
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
 }
 .front img:hover {
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;
-  -moz-filter: grayscale(1);
+  -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
