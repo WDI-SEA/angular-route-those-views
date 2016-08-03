@@ -18,7 +18,7 @@ body {
 }
 
 .top-text {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 100px 0;
 }
 
 .top-text h3 {
@@ -94,7 +94,16 @@ body {
 
 /*}*/
 
+.front-title {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  vertical-align: center;
+}
 
+.front-title h3 {
+  padding-top: 25%;
+  font-weight: 100;
+}
 
 /* ------- Effects --------- */
 
