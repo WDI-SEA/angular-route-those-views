@@ -2,19 +2,19 @@ var app = angular.module('Portfolio', ['ui.router']);
 
 app.factory('projects', function() {
   return {
-    '1': {title: 'Dungeon Explorer',    cover: 'project/cover-dungeon.png',
+    '1': {title: 'Dungeon Explorer',    cover: 'project/cover-dung.png',
           img: ['dungeon1.png','dungeon2.png'],
           desc: 'Lorem Ipsum'},
 
-    '2': {title: 'SquidLink',           cover: 'project/cover-squidlink.png',
+    '2': {title: 'SquidLink',           cover: 'project/cover-squidl.png',
           img: ['squidlink1.png', 'squidlink2.png', 'squidlink3.png', 'squidlink4.png',],
           desc: 'Lorem Ipsum'},
 
-    '3': {title: 'Game of Life',        cover: 'project/cover-gol.png',
+    '3': {title: 'Game of Life',        cover: 'project/cover-life.png',
           img: ['gol1.png', 'gol2.png'],
           desc: 'Lorem Ipsum'},
 
-    '4': {title: 'Homocides by Police', cover: 'project/cover-homocide.png',
+    '4': {title: 'Homocides by Police', cover: 'project/cover-cops.png',
           img: ['homocide1.png','homocide2.png'],
           desc: 'Lorem Ipsum'},
 
