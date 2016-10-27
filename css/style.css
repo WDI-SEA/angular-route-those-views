@@ -1,0 +1,12 @@
+.testing-style {
+	color: blue;
+}
+
+#nav-menu li {
+	display: inline-block;
+}
+
+img {
+	max-width: 400px;
+}
+
