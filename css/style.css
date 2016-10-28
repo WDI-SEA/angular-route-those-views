@@ -1,0 +1,84 @@
+body {
+	text-align: center;
+	background: url("/img/background2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	font-size: 20px;
+	/*font-weight: 700;*/
+	color: white !important;
+	font-family: "runda",sans-serif !important;
+	font-style: normal;
+	font-weight: 900 !important;
+}
+
+h1 {
+	font-family: "runda",sans-serif !important;
+	font-style: normal;
+	font-weight: 900 !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	font-size: 22px !important;
+	margin-top: -20px !important;	
+}
+
+h3 {
+	font-family: "runda",sans-serif !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	text-transform: uppercase;
+	font-size: 12px !important;
+	letter-spacing: 3px;
+}
+
+h2, p{
+	font-family: "adobe-caslon-pro",serif !important;
+	font-style: normal;
+	font-weight: 600;
+}
+
+p {
+	font-size: 18px;
+	line-height: 30.5px;
+	letter-spacing: .2px;
+	padding-bottom: 20px;
+}
+a {
+	color: white !important;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 13px;
+}
+
+a:hover {
+	background-color: black !important;
+}
+
+
+.logo img{
+	height: 100px;
+	padding-top: 10px;
+	position: inline-block;
+	padding-bottom: 20px;
+}
+
+.tagline {
+	margin-top: -25px;
+	font-style: italic;
+}
+
+.front {
+	padding-top: 90px;
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+
+}
+
