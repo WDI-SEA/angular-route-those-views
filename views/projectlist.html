@@ -1,0 +1,25 @@
+<div class="max-width">
+  <div class="flex small-12 columns text-center">
+    <div class="projects" ng-repeat="(key, project) in projects track by $index">
+
+      <div class="flip-container" onclick="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front" ng-style="project.infoColor">
+            <!-- front content -->
+            <img src="img/{{project.cover}}" ng-hide="project.info" alt="">
+            <div class="front-title">
+              <h3><i>{{project.infoTitle}}</i></h3>
+            </div>
+          </div>
+          <div class="back">
+            <!-- back content -->
+            <div class="subtitle">
+              <a ng-click href="#/projects/{{key}}">{{project.title}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
