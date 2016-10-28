@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="KimsApp" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Hello Front-End</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Noto+Serif|Shadows+Into+Light|Bad+Script|Miriam+Libre|Roboto" rel="stylesheet">
+
+
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+<div id="nav">
+	<a href="/">
+	<div id="logo">
+	<div class="logo-top">PARKS OF</div>
+	<div class="logo-bottom">SEATTLE</div>
+	</div>
+	</a>
+	<ul id="navbar">
+		<li><a href="/#/about">About</a></li>
+		<li><a href="/#/classics">Classics</a></li>
+		<li><a href="/#/gems">Hidden Gems</a></li>
+		<li><a href="/#/beaches">Secret Beaches</a></li>
+	</ul>
+</div>
+	<div ui-view class="con">
+	</div>
 </body>
 </html>

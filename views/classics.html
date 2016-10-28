@@ -1,0 +1,11 @@
+<div class="content" ng-controller="AppCtrl3">
+	<h1>Classics</h1>
+	<p class="main-p">
+	These are the parks that have been Seattle favorites for many years, and for good reason. They are often prime photography spots, many featuring stunning views. They can be crowded on weekends, but are definitely worth a visit if you haven't been.
+	</p>
+	<div class="park-list" ng-repeat="park in parkList">
+	<h2>{{park.name}}</h2>
+	<strong>{{park.address}}</strong><br>
+	<p class="park-desc">{{park.description}}</p>
+	</div>
+</div>

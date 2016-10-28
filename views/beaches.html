@@ -1,0 +1,14 @@
+<div class="content">
+	<h1>Secret Beaches</h1>
+	<p class="main-p">
+	Did you know that Seattle has 149 "secret" beaches? These are characterized by unoccupied land between a street end and the shoreline. They are public land, and are often preserved and maintained by the city. Some however are overgrown, unmarked and may be harder to reach, but if you're the adventurous type, go for it! 
+	</p>
+	<p class="main-p">
+	Below is a list of the top easily accessable secret beaches, as well as a link to a map of all of them.
+	</p>
+	<div class="park-list" ng-repeat="park in parkList">
+	<h2>{{park.name}}</h2>
+	<strong>{{park.address}}</strong><br>
+	<p class="park-desc">{{park.description}}</p>
+	</div>
+</div>
