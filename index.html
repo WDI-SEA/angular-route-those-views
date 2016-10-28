@@ -6,24 +6,33 @@
  	<title>Routing App</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ -->	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-animate.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 
 	<script src="js/app.js"></script>
 	<script src="js/controllers.js"></script>
+
 </head>
 <body class="text-center">
- 	<h1 class="testing-style">Fake Site w/ Silly Animals</h1>
+ 	<h1 class="site-title">Fake Site for Fine Creatures</h1>
 
  	<ul id="nav-menu">
- 		<li><a href="/#/capybaras">Capybaras</a></li>
- 		<li><a href="/#/goats">Goats</a></li>
- 		<li><a href="/#/anteaters">Anteaters</a></li>
- 		<li><a href="/#/raccoons">Raccoons</a></li>
+ 		<li><a href="/#/"<button class="btn btn-default">Home</button></a></li>
+ 		<li><a href="/#/capybaras"><button class="btn btn-default">Capybaras</button></a></li>
+ 		<li><a href="/#/anteaters"><button class="btn btn-default">Anteaters</button></a></li>
+ 		<li><a href="/#/raccoons"><button class="btn btn-default">Raccoons</button></a></li>
  	</ul>
 
+<!--  	<div class="row">
+    	<div class="span12 ui-view-container" style="position:relative;">
+      		<div class="well" ui-view style="position: absolute;"></div>        
+    	</div>
+  	</div>    -->
 
- 	<div ui-view></div>
+ 	<div ui-view><h2 class="section-title">GOOD AFTERNOON</h2></div>
 
 
 </body>
