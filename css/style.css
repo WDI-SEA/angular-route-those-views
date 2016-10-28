@@ -1,0 +1,25 @@
+h1, h2, a{
+	font-family: helvetica;
+}
+h1, h2 {
+	text-align: left;
+}
+
+p {
+	text-align: left;
+}
+
+img {
+	float: left;
+	width: 400px;
+	height: auto;
+	margin: 20px;
+}
+
+#navbar li {
+	display: inline-block;
+}
+
+#clearedDiv {
+	clear: both;
+}

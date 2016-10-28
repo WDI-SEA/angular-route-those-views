@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="HipHopApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>History of Hip Hop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controller.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper button-collapse">
+      	<ul id="navbar" class="left hide-on-med-and-down">
+              <li><a href="/#/">Roots</a></li>
+          		<li><a href="/#/oldschool">Oldschool</a></li>
+          		<li><a href="/#/modern">Modern</a></li>
+        	</ul>
+        </div>
+      </nav>
+    </div>
+	<div ui-view></div>
 </body>
 </html>
