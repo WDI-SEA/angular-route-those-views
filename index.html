@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="HalloweenApp">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Halloween App</title>
+  <script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <ul class ="nav nav-pills pull-right" id="navbar">
+    <li role="presentation" class="dropdown"><a href='/#/'>Halloween</a></li>
+    <li role="presentation" class="dropdown"><a href='/#/christmas'>Christmas</a></li>
+    <li role="presentation" class="dropdown"><a href='/#/stpat'>St. Patrick's Day</a></li>
+  </ul>
+    <div ui-view>
+      
+    </div>
 </body>
 </html>
