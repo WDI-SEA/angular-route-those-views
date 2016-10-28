@@ -1,0 +1,19 @@
+body {
+	background-color: #a6a6a6;
+	text-align: center;
+}
+
+.navbar-nav {
+	float: right;
+	margin-top: 21px;
+	margin-right: 10%;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
+.gif {
+	list-style: none;
+}
