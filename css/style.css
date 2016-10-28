@@ -1,0 +1,26 @@
+body {
+  background-image: url('/img/spacebg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ff6;
+  text-align: center;
+}
+
+.main-well {
+  background-color: #111;
+  border-color: rgb(75, 213, 238);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+.well {
+  background-color: #111;
+  border-color: rgb(75, 213, 238);
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
