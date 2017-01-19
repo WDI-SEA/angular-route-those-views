@@ -1,0 +1,11 @@
+<ul>
+  <li ng-repeat="cast in casts" class="castList">
+    <img class="img" ng-src="{{ cast.image }}">
+    <div class="cast">
+    	<div>
+    		<a href="{{ cast.imdbUrl }}" target="_blank"><strong>{{ cast.name }}</strong></a>
+    	</div>
+	    <div>{{ cast.as }}</div>
+    </div>
+  </li>
+</ul>
