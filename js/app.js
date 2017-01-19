@@ -11,10 +11,10 @@ angular.module('App', ['ui.router'])
       templateUrl: '../views/home.html',
       controller: 'HomeController'
     })
-    .state('jobs', {
-      url: '/jobs',
-      templateUrl: '../views/jobs.html',
-      controller: 'JobsController'
+    .state('news', {
+      url: '/news',
+      templateUrl: '../views/news.html',
+      controller: 'NewsController'
     })
     .state('about', {
       url: '/about',
