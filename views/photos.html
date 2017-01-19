@@ -1,0 +1,22 @@
+<h1>Maschine Photos</h1>
+
+<div class="flexyPhotos">
+  <img src="/img/download.jpg" alt="" />
+  <img src="/img/1.jpg" alt="" />
+  <img src="/img/2.jpg" alt="" />
+  <img src="/img/3.jpg" alt="" />
+  <img src="/img/images.jpg" alt="" />
+  <img src="/img/imgres.jpg" alt="" />
+  <img style="height: 200px; width: 250px;" src="https://www.native-instruments.com/typo3temp/pics/img-ce-full-maschine-jam_overview_05-dual-impact-a21cf537c92d6b1abe83a6e41e1fda1d-d.jpg" alt="" />
+  <img src="/img/4.jpg" style="height: 280px; width: 350px;" alt="" />
+  <img src="/img/5.jpg" style="height: 300px; width: 450px;" alt="" />
+  <img src="/img/6.png" style="height: 260px; width: 325px;" alt="" />
+  <div ng-repeat="photo in photoArray track by $index">
+    <img src="{{photoArray[$index]}}" alt="" />
+  </div>
+</div>
+
+<form ng-submit="addPhoto()">
+  <input type="text" ng-model="photoURL">
+  <input type="submit" value="Add Photo URL">
+</form>
