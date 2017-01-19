@@ -20,11 +20,24 @@
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" ui-sref-active="active" ui-sref="home">Tech Expo 2017</a>
-        <ul class="nav navbar-nav">
-          <li ui-sref-active="active"><a ui-sref="about">About</a></li>
-          <li ui-sref-active="active"><a ui-sref="sponsors({id: ''})">Sponsors</a></li>
-        </ul>
+
+        <div class="navbar-header">
+          <a class="navbar-brand" ui-sref-active="active" ui-sref="home">Tech Expo 2017</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-div" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-div" data-toggle="collapse" data-target="#navbar-collapse-div">
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+            <li ui-sref-active="active"><a ui-sref="sponsors({id: ''})">Sponsors</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
@@ -33,8 +46,12 @@
       </div>
     </div>
 
-    <div class="footer">
-      Footer
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="https://github.com/Tommy-Lim/angular-route-those-views">GitHub project by Tommy Lim</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
