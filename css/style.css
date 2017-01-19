@@ -1,0 +1,59 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkorange;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li img {
+    height: 50px;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+}
+
+.active {
+    background-color: darkorange;
+}
+
+body {
+    background: linear-gradient(to right, darkgrey , white);
+}
+
+.homeContainer {
+    text-align: center;
+    height: 750px;
+    width: 1400px;
+    margin: 0 auto;
+    background-image: url(../img/maschinestudio_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flexyPhotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flexyPhotos img {
+    border-radius: 5px;
+    margin: 2px;
+}

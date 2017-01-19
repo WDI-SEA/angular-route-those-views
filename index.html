@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Page Title</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+<header>
+  <nav>
+    <ul>
+      <li><a ui-sref="home">Home</a></li>
+      <li><a ui-sref="tutorial">Tutorial</a></li>
+      <li><a ui-sref="history">History</a></li>
+      <li><a ui-sref="photos">Photos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body ng-app="App" ng-controller="globalCtrl">
+
+  <div ui-view></div>
+
 </body>
+
 </html>

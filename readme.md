@@ -1,7 +1,7 @@
 #Routing those Views
 
 Create a 3-5 page front-end app using Angular. Make a page
-dedicated to describing different characters in a TV show, or 
+dedicated to describing different characters in a TV show, or
 a site dedicated to your favorite artist or band. Maybe make
 a multi-page site describing some of your different features
 of neighborhoods in Seattle. You can really make a page about
