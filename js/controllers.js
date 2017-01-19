@@ -2,6 +2,38 @@ angular.module('App')
 .controller('HomeController', ['$scope', '$state', function($scope, $state){
   $scope.name = 'Home page';
 }])
+.controller('JobsController', ['$scope', '$state', '$http', function($scope, $state, $http){
+  $scope.searchTerm = '';
+  $scope.locationTerm = '';
+  $scope.results = [];
+
+  $scope.search = function() {
+    var req = {
+      url: 'https://jobs.github.com/positions.json',
+      method: "GET",
+      params: {
+        description: $scope.searchTerm,
+        location: $scope.locationTerm
+      }
+    };
+
+    console.log("search: ", $scope.searchTerm);
+    console.log("location: ", $scope.locationTerm);
+
+    $http(req).then(function success(res) {
+      console.log("HTTP success:", res.data.data);
+      if (res.data.Error === "Jobs not found!") {
+        $scope.results = [];
+      } else {
+        $scope.results = res.data.data;
+      }
+    }, function failure(res) {
+      $scope.results = [];
+      console.log("HTTP failed:", res);
+    });
+  };
+
+}])
 .controller('AboutController', ['$scope', '$state', function($scope, $state){
   $scope.name = 'About page';
 }])

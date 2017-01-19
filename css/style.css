@@ -11,3 +11,7 @@ body {
   width: 150px;
   height: 150px;
 }
+
+.thumbnail{
+  padding-top: 10px;
+}
