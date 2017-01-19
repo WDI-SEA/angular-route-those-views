@@ -1,15 +1,23 @@
-<h1>Page: {{name}}</h1>
-<h1>id: {{id}}</h1>
-
 <div ng-show="id">
-  <p>id: {{id}}</p>
-  <p>name: {{sponsors[id].name}}</p>
-  <p>about: {{sponsors[id].about}}</p>
-  <p>donationTier: {{sponsors[id].donationTier}}</p>
-  <img ng-src="{{sponsors[id].image}}" />
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">
+        {{sponsors[id].name}}
+      </div>
+    </div>
+    <div class="panel-body">
+      <p>{{sponsors[id].about}}</p>
+      <p>Sponsor Tier: <strong>{{sponsors[id].donationTier}}</strong></p>
+      <img ng-src="{{sponsors[id].image}}" />
+    </div>
+  </div>
+
 </div>
 
 <div class="container sponsors-container" ng-hide="id">
+  <div class="sponsor-div" ng-repeat="sponsor in sponsors track by $index">
+    <a ui-sref="sponsors({id: {{$index}}})"><img class="sponsor-pic" ng-src="{{sponsor.image}}" /></a>
+  </div>
   <div class="sponsor-div" ng-repeat="sponsor in sponsors track by $index">
     <a ui-sref="sponsors({id: {{$index}}})"><img class="sponsor-pic" ng-src="{{sponsor.image}}" /></a>
   </div>

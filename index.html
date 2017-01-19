@@ -17,20 +17,19 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body ng-app="App">
-    <div class="nav">
-      <nav>
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" ui-sref-active="active"><a ui-sref="home">Home</a></li>
-          <li role="presentation" ui-sref-active="active"><a ui-sref="about">About</a></li>
-          <li role="presentation" ui-sref-active="active"><a ui-sref="sponsors({id: ''})">Sponsors</a></li>
-        </ul>
-      </nav>
-    <div>
 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" ui-sref-active="active" ui-sref="home">Tech Expo 2017</a>
+        <ul class="nav navbar-nav">
+          <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+          <li ui-sref-active="active"><a ui-sref="sponsors({id: ''})">Sponsors</a></li>
+        </ul>
+      </div>
     </div>
+
     <div class="container">
       <div ui-view>
-
       </div>
     </div>
 
