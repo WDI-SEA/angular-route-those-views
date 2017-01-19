@@ -1,9 +1,12 @@
 angular.module('App')
 
+.controller('globalCtrl', ['$scope', '$state', function($scope, $state) {
+// This works, but ask about $rootscope, passing things without needing to make controller hierarchy
+$scope.photoArray = [];
+}])
+
 .controller('homeCtrl', ['$scope', '$state', function($scope, $state) {
   $scope.test = "Home route works!"
-$scope.photoArray;
-console.log($scope.photoArray);
 }])
 
 .controller('tutorialCtrl', ['$scope', '$state', function($scope, $state) {
@@ -17,7 +20,6 @@ $scope.photoArray;
 .controller('photosCtrl', ['$scope', '$state', function($scope, $state) {
 
   $scope.photoURL;
-  $scope.photoArray = [];
 
   $scope.addPhoto = function () {
     console.log($scope.photoURL)
