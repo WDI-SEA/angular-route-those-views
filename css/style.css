@@ -1,0 +1,32 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1459876947801-8879713c9b47?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3b89977a4cd670810785025a1b3130b2') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  @font-face {
+    font-family: 'starwars';
+    src: url('STARWARS/STARWARS.ttf');
+  }
+  font-family: 'starwars';
+}
+
+button {
+  color: black;
+}
+
+.well {
+  color: black;
+}
+
+#darth, #luke, #leia {
+  border-radius: 50%;
+}

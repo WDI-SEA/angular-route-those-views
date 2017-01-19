@@ -1,0 +1,25 @@
+<div>
+  <input type="integer" ng-model="movieId">
+  <button ng-click="getMovie(movieId)">Get</button>
+  <button ng-click="getAll()">All</button>
+</div>
+
+<div ng-if="loading">
+  Loading...
+</div>
+
+<!-- Iterate through the films array and display each film -->
+<div ng-if="!loading" class="well" ng-repeat="film in films">
+  <h2>{{ film.title }}</h2>
+  <h4>Directed by: {{ film.director }}</h4>
+
+    <!-- returns a link to each character's page. Not sure who each one is, hence 'Mystery' -->
+
+    <p>Characters: <br>
+    <span ng-repeat="character in film.characters">
+      <a href="{{ character }}">Mystery</a></span></p>
+
+
+
+  <p>{{ film.opening_crawl }}</p>
+</div>
