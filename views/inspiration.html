@@ -1,0 +1,18 @@
+<div class="container">
+  <!-- <h1>OMDB Movie picker </h1> Angular, what is 1 +1? {{1 + 1}} -->
+  <h1>Motivational Quote Generator</h1>
+  <div ng-show="results !== undefined && results.length === 0">
+    Sorry no results.
+  </div>
+  <div ng-show="results !== undefined && results.joke.length > 0 ng-repeat=arrayQuoteResult in arrayQuoteResults | limitTo:3 track by $index">
+    <ul>
+      <li>{{arrayQuoteResults}}<br></li>
+    </ul>
+    <form ng-submit="search()">
+      <!-- <input type="text" ng-model="searchTerm" ng-model-options="{debounce: 500}"></input> -->
+      <button type="submit"> Get another quote </button>
+    </form>
+
+
+
+  </div>

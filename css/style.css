@@ -1,0 +1,56 @@
+/*#paraDiv {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: #333;
+  margin-bottom: 600px;
+  overflow: hidden;
+}
+
+.homemadeParalax {
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  background-image: url('/img/yoga.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+/* PARALAX */
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.caption {
+  padding-left: 15%;
+  color: black;
+  font-weight: bold;
+}
+#lastCaption {
+  color: black;
+}
+
+
+/* NAV-BAR */
+.nav-wrapper {
+  margin: 0 auto;
+  height: 10vh;
+}

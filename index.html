@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Yoga</title>
+  <!-- Bootstrap -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Local -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Angular -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <!--ui router line below  -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js'></script>
+  <script src='app.js'></script>
+  <script src="controllers.js"></script>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+
+<body ng-app="App">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a ui-sref="home()" class="brand-logo">Seattle Yoga Supply</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a ui-sref="contact()">Contact Page </a></li>
+        <li><a ui-sref="inspiration()">Inspirational Quotes Page </a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a ui-sref="contact()">Contact Page </a></li>
+        <li><a ui-sref="inspiration()">Inspirational Quotes Page </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div ui-view></div>
+
+  <div id="paralizax">
+    <!-- <div id="index-banner" class="parallax-container"> -->
+    <div class="parallax-container valign-wrapper">
+      <h5 class="caption header col s12 light">Yoga is not about self-improvement</h5>
+      <div class="parallax"><img id='topImage' src="/img/yoga.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m6">
+            <div>
+              <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">Easy to work with</h5>
+              <p class="light">We have provided detailed documentation to help new users get started and a few helpful hints to help keep experienced yogis going. We are also always open to feedback and will be happy to answer any questions a you might have.</p>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div>
+              <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">Customer Gaurantee</h5>
+              <p class="light">By utilizing elements and principles of Brikham Yoga and bringing those into our business practices, we have been able to create a framework that incorporates key components of a healthy balanced life into our every day operations. These
+                values are the driver behind our 100 day no questions asked money-back promise. allow for a more unified user experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+      <h5 class="caption header col s12 light">it's about self-acceptance</h5>
+      <div class="parallax"><img src="/img/yoga2.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <div class="container">
+      <h4>Our History</h4>
+      <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
+        ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
+        erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+    </div>
+    <div class="parallax-container valign-wrapper">
+      <h5 class="caption header col s12 light"><a ui-sref="inspiration()"><span id="lastCaption">Need Inspiration???</span></a></h5>
+      <div class="parallax"><img src="/img/yoga3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+  </div>
+
+
+
+  <!-- jQuery  -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <!-- local -->
+  <script src='js/main.js'></script>
+
 </body>
+
 </html>
