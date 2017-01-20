@@ -11,7 +11,8 @@ angular.module('App')
       method: "GET",
       params: {
         source: "techcrunch",
-        apiKey: "979095b5b27d42058805eb6841ad4c08"
+        apiKey: "979095b5b27d42058805eb6841ad4c08",
+        sortBy: "top"
       }
     };
 

@@ -15,3 +15,16 @@ body {
 .thumbnail{
   padding-top: 10px;
 }
+
+.news-pic{
+  width: 100px;
+  height: 100px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.panel-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
