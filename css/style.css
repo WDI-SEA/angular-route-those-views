@@ -1,0 +1,30 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.thumbnail .sponsor-pic{
+  height: 150px;
+}
+
+.sponsor-panel-pic{
+  width: 150px;
+  height: 150px;
+}
+
+.thumbnail{
+  padding-top: 10px;
+}
+
+.news-pic{
+  width: 100px;
+  height: 100px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.panel-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
