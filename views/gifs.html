@@ -1,0 +1,13 @@
+<div class="title">
+  <h1>Bieber GIFs</h1>
+</div>
+<div class="nav">
+  <a href="/#/" class="waves-effect waves-light btn-large cyan darken-1">Home</a>
+  <a href="/#/music" class="waves-effect waves-light btn-large cyan darken-1">Music</a>
+  <a href="/#/about" class="waves-effect waves-light btn-large cyan darken-1">About</a>
+</div>
+<div id="gifDisplay" class="row">
+  <div id="gif" class="col s3" ng-repeat="gifs in gifs track by $index">
+    <a href="{{ gifs.url }}"><img ng-src="{{ gifs.images.fixed_height.url }}"></a>
+  </div>
+</div>

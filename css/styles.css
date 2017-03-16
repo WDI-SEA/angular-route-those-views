@@ -1,0 +1,55 @@
+* {
+  font-family: 'Abel', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  height: 900px;
+  width: 100%;
+  background: url('http://cdn2-www.musicfeeds.com.au/assets/uploads/justin-bieber-2016-press-pic-supplied.jpg') no-repeat;
+}
+
+.title {
+  font-size: 1.5em;
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+
+.nav {
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+.nav a {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.music {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.about {
+  font-size: 1.25em;
+  width: 700px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#gifDisplay {
+  margin-top: 20px;
+}
+
+#gif {
+  margin: 0;
+}
+
+#spotify {
+  padding-left: 0;
+}
