@@ -1,14 +1,18 @@
 <h1>Hello Front-End</h1>
 
-<div>
-	<button ng-click='find()'>click me</button>
+<div class='form-group'>
+	<input type="text" ng-model='name' class='form-control'>
+	<button class='btn btn-primary' ng-click='find()'>click me</button>
 </div>
 
 <div ng-if='loading'>
 	Loading...
 </div>
 <div ng-if='!loading'>
-	show something
+	<p>{{ pokemonData.name }}</p>
+	<p>{{ pokemonData.base_experience }}</p>
+	<p>{{ pokemonData.order }}</p>
+	<p ng-repeat='ability in pokemonData.abilities'>Abilities {{ ability.ability.name }}</p>
 </div>
 
 

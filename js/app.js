@@ -4,7 +4,6 @@ console.log('app.js running')
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
-	//$resourceProvider.defaults.stripTrailingSlashes = false;
 
 	$stateProvider
 	.state('home', {
