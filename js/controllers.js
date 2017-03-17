@@ -23,7 +23,7 @@ app.controller("pokemonCtrl", ['$scope', 'pokemonFactory', function($scope, poke
     pokemonFactory.get({ id:id }, function success(data){
       $scope.pokemon = {data};
       $scope.loading = false;
-      console.log(data.name);
+      console.log(data);
     }, function error(data){
       console.log('error', data);
       $scope.loading=false;

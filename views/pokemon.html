@@ -21,8 +21,9 @@
 <div ng-if='!loading' ng-repeat='pokemon in pokemon track by $index'>
 
   <h2># {{ pokemon.id }} :{{ pokemon.name }}</h2>
-  <h4>{{pokemon.types[0].name}}-type Pokemon, found in {{pokemon.LocationAreaEncounter.location_area}}
+  <h4>A {{ pokemon.types[0].type.name }}-type Pokemon</h4>
+  <small>View Encounter Map: <a href="{{pokemon.location_area_encounters}}">{{pokemon.location_area_encounters}}</a></small>
   <div class="well">
-    <h3><a ng-href="/#/pokemon/{{$index}}">More about {{data.name}}</a></h3>
+    <h3><a ng-href="/#/pokemon/{{$index}}">More about {{pokemon.name}}</a></h3>
   </div>
 </div>
