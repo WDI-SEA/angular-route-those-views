@@ -10,7 +10,7 @@ app.controller("pokemonCtrl", ['$scope', 'pokemonFactory', function($scope, poke
     pokemonFactory.query(function success(data){
       console.log('success');
       console.log(data);
-      $scope.pokemon = data.results;
+      $scope.pokemon = {data};
       $scope.loading = false;
     }, function error(data){
       console.log('error', data);
@@ -32,6 +32,14 @@ app.controller("pokemonCtrl", ['$scope', 'pokemonFactory', function($scope, poke
 }]);
 
 app.controller('PokeShowCtrl',['$scope', '$state', '$stateParams', 'pokemonFactory', function($scope, $state, $stateParams, pokemonFactory){
-  $state.go('about');
-  console.log($state.current);
+  $scope.pokemon = {};
+
+  pokemonFactory.get({id: $stateParams.id}, function success(data){
+    $scope.pokemon = data;
+  }, function error(data){
+    console.log('there was an error', data);
+  });
+
+  // $state.go('');
+  // console.log($state.current);
 }]);
