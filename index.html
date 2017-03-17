@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="CloudApp">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Cloud App</title>
+  	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+	  <script src="js/factory.js"></script>
+	  <script src="js/controllers.js"></script>
+	  <!-- <script src="js/responsiveVid.js"></script> -->
+	  <script src="js/app.js"></script>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+<body ng-controller='CloudCtrl'>
+	<div class='container-fluid'>
+		<div class='row nav'>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<a href="/#/" class='navLinks'>Home</a>
+				<span> | </span>
+				<a href="/#/cloudTypes" class='navLinks'>Types of Clouds</a>
+				<span> | </span>
+				<a href="/#/happyClouds" class='navLinks'>Feeling Depressed?</a>
+			</div>
+		</div>
+  		<div ui-view></div>
+  	</div>
 </body>
 </html>
