@@ -1,0 +1,10 @@
+<br>
+<h1 class="text-center"><span><big>{{ word }}</big></span> Gifs</h1>
+<a class="btn center-block btn-sm btn-primary" href="/#/">Back to Search</a>
+<br>
+<br>
+<div class="row">
+    <div class="col-xs-3" ng-repeat="img in gif">
+        <img ng-src="{{ img.images.fixed_height.url }}">
+    </div>
+</div>

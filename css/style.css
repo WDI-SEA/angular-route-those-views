@@ -1,0 +1,45 @@
+img {
+    height: 200px;
+    width: 300px;
+}
+
+body {
+    background: #2f496e;
+    color: white;
+}
+
+.well {
+    color: black;
+}
+
+input {
+    height: 35px;
+    border-radius: 10px;
+    color: black;
+}
+
+.btn {
+    border: 2px solid #2988bc;
+    background: #2f496e;
+    color: #2988bc;
+}
+
+.btn:hover {
+    border: 1px solid #2988bc;
+    background: #2988bc;
+    color: #2f496e;
+}
+
+a {
+    color: #2988bc;
+}
+span {
+    color: #2988bc;
+}
+
+a.word {
+    color: white;
+    border: 2px solid #2988bc;
+    padding-left: 5px;
+    padding-right: 5px;
+}

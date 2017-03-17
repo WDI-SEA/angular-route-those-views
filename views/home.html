@@ -1,0 +1,16 @@
+<br>
+<h1 class="text-center">Urban Dictionary Search</h1>
+<div class="row">
+    <input type="text" class="col-xs-8 col-xs-offset-2" placeholder="define..." ng-model="word">
+    <button class="btn btn-md btn-primary col-xs-1" ng-click="define()">Search</button>
+</div>
+
+<h2 class="text-center"><a class="word" ng-href="/#/giphy/{{word}}">{{word}}</a></h2>
+<div class="col-xs-8 col-xs-offset-2 well" ng-repeat="search in defined">
+    <h4>{{ search.definition }}</h4>
+    <i class="text-center">"{{ search.example }}"</i>
+    <br><br>
+    <small><b>-{{search.author}}</b></small>
+    <button class="btn-xs btn-success pull-right">{{search.thumbs_up}}<i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button><button class="btn-xs btn-danger pull-right">{{search.thumbs_down}}<i class="fa fa-thumbs-o-down" aria-hidden="true"></i></button>
+    <br>
+</div>
