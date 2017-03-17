@@ -1,0 +1,29 @@
+
+
+<a href="/#/about">About</a>
+
+
+  <div>
+    <div class="search">
+      <input type="number" ng-model='pokemonId'>
+      <button ng-click='getOnePokemon(pokemonId)'>GO</button>
+    </div>
+    <br>
+    <div class="all">
+      <button ng-click='getAllPokemon()'>Show Some Pokemon</button>
+    </div>
+    <hr>
+</div>
+<div ng-if="loading">
+  Loading...
+</div>
+
+<div ng-if='!loading' ng-repeat='pokemon in pokemon track by $index'>
+
+  <h2># {{ pokemon.id }} :{{ pokemon.name }}</h2>
+  <h4> {{ pokemon.types[0].type.name }}-type Pokemon</h4>
+  <small>View Encounter Map: <a href="{{pokemon.location_area_encounters}}">{{pokemon.location_area_encounters}}</a></small>
+  <div class="well">
+    <h3><a href="/#/pokemon/{{$index+1}}">More about {{pokemon.name}}</a></h3>
+  </div>
+</div>
