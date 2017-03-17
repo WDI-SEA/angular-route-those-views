@@ -9,5 +9,13 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         templateUrl: 'views/cards.html',
         controller: 'YugiCtrl'
     })
+    .state('about', {
+        url: '/about',
+        templateUrl: 'views/about.html'
+    })
+    .state('API', {
+        url: '/api',
+        templateUrl: 'views/API.html'
+    })
 
 }])
