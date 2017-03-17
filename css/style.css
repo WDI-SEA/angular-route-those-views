@@ -1,0 +1,35 @@
+body{
+  background-color: lightGray;
+}
+header{
+  background-color: black;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+a{
+  color: white;
+}
+.navBar{
+  margin: 3%;
+}
+.acts{
+  color: black;
+}
+.characters{
+  width: 190px;
+  height: 250px;
+}
+.cNav{
+  display: inline-block;
+  width: 33%;
+}
+.profilePic{
+
+}
+.songs{
+  border-radius: 5px;
+}
+.poster{
+  width: 12%;
+  height: 12%;
+}

@@ -1,0 +1,17 @@
+<div>
+  <button ng-if="!loading && preClick" ng-click="getIt()" class="btn">
+  <h1>Dr. Horrible's Sing-Along Blog</h1>
+  <img src="../img/fingerDance.gif" class="gif">
+  </button>
+</div>
+
+<div ng-if="loading">
+  <img src="../img/fingersCrossed.gif" class="gif">
+</div>
+
+<div ng-if="!loading" ng-repeat="movie in movies" class="well">
+  <h1>{{movie.Title}}</h1>
+  <small>{{movie.Released}}</small>
+  <img ng-src="{{movie.Poster}}" class="poster">
+  <p>{{movie.Awards}}</p>
+</div>
