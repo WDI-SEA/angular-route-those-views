@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="YugiApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>YuGiOh Cards</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+        <script src="js/factory.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href='/css/style.css'>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+<body ng-controller="YugiCtrl">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img id="brand" alt="Brand" src="/img/MillenniumPuzzle.jpg">
+          Home
+        </a>
+        <form class="navbar-form navbar-left" role="search">
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div ui-view></div>
+  </div>
 </body>
 </html>
