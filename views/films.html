@@ -1,0 +1,26 @@
+<div>
+		<div class='row'>
+			<div class="well col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat='movie in movies'>
+				<h1>{{movie.Title}}</h1>
+				<h3>{{movie.Year}}</h3>
+				<img ng-src="{{movie.Poster}}">
+				<h5><a ng-href="/#/more/{{index+1}}">More About {{movie.Title}}</a></h5> 
+			</div>
+		</div>
+</div>
+<!--   <input type="number" ng-model="movieId">
+  <button ng-click="getOneMovie(movieId)">Get</button>
+<div>
+  <button ng-click="getAllMovies()">Get Films!</button>
+</div>
+
+<div ng-if="loading">
+  Loading...
+</div>
+
+<div ng-if="!loading" ng-repeat="film in films track by $index">
+  <h2>{{ film.title }}</h2>
+  <h3>Originally released in {{ film.release_date | date:"MMMM" }} of {{ film.release_date | date:"yyyy" }}</h3>
+  <p>{{ film.opening_crawl }}</p> -->
+<!--   <h2><a ng-href="/#/films/{{index+1}}">More About {{film.title}}</a></h2>   -->
+<!-- </div> -->
