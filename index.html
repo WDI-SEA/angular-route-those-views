@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app='pokemonApp' lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Pokedex</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="js/factory.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/app.js"></script>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+<body ng-controller='pokemonCtrl'>
+  <div class="container">
+    <h1>POKE-DEX</h1>
+  <div ui-view>
+
+  </div>
+  </div>
 </body>
 </html>
