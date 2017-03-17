@@ -51,6 +51,10 @@ body {
   padding: 0;
 }
 
+.icon {
+  margin-right: 25px;
+}
+
 .gifImg {
   height: 200px;
   width: 400px;
