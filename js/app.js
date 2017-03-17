@@ -9,12 +9,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	.state('home', {
 		url: '/',
 		templateUrl: 'views/home.html',
-		controller: 'PokemonCtrl'
+		controller: 'HomeCtrl',
 	})
 	.state('pokemon', {
-		url: '/pokemon',
-		templateUrl: 'pokemon.html',
-		controller: 'POkemonCtrl'
+		url: '/pokemon/:name',
+		templateUrl: 'views/pokemon.html',
+		controller: 'PokemonCtrl'
 	});
 
 }]);

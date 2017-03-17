@@ -1,29 +1,37 @@
 var app = angular.module('PokemonCtrl', ['PokemonFactory']);
 
-app.controller('PokemonCtrl', ['$scope', 'PokemonFactory', 'FlavorTextFactory', function($scope, PokemonFactory, FlavorTextFactory) {
-	$scope.name = 'charzard';
-	$scope.pokemonData;
-	$scope.speciesData;
-	$scope.pokemonId;
-	$scope.evolutionUrl;
-	$scope.loading = false;
+app.controller('PokemonCtrl', [
+	'$scope', 
+	'$state', 
+	'PokemonFactory', 
+	'FlavorTextFactory', 
+	'$stateParams',
+	function(
+		$scope, 
+		$state, 
+		PokemonFactory, 
+		FlavorTextFactory,
+		$stateParams
+		) {
+		$scope.name = $stateParams.name;
+		$scope.pokemonData;
+		$scope.speciesData;
+		$scope.pokemonId;
+		$scope.evolutionUrl;
+		$scope.loading = false;
 
-	$scope.find = function() {
-		console.log('clicked')
+
+		$scope.find = function() {
 		$scope.loading = true;
 		PokemonFactory.get( {name: $scope.name},
 			function success(data) {
-				console.log(data);
 				$scope.pokemonData = data;
 				$scope.pokemonId = $scope.pokemonData.id;
-				console.log($scope.pokemonId)
 				
 				FlavorTextFactory.get( {id: $scope.pokemonId},
 					function success(data) {
 						$scope.loading = false;
 						$scope.speciesData = data;
-						$scope.evolutionUrl = data.evolution_chain.url;
-						console.log('this is working!')
 					},
 					function error(data) {
 						console.log('error', data);
@@ -36,9 +44,18 @@ app.controller('PokemonCtrl', ['$scope', 'PokemonFactory', 'FlavorTextFactory', 
 			}
 		);
 	}
+	console.log($scope.name)
+	$scope.find();
 }]);
 
-
+app.controller('HomeCtrl', [
+	'$scope',
+	 '$state',
+	 function($scope, $state) {
+	 	$scope.search = function() {
+	 		$state.go('pokemon', {name: $scope.name});
+	 	}
+	 }])
 
 
 

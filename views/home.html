@@ -1,10 +1,10 @@
-<h1>Pokedex</h1>
+<h1 class='text-center'>Pokedex</h1>
 <a href="/#/pokemon">test</a>
 
-<div class='input-group input-group-lg searchBar'>
-	<input type="text" ng-model='name' class='form-control'>
+<div class='input-group input-group-lg searchBarDiv'>
+	<input type="text" ng-model='name' class='form-control' id='searchBar'>
 	<span class='input-group-btn'>
-		<button class='btn btn-primary' ng-click='find()'>click me</button>		
+		<button class='btn btn-primary' ng-click='search()'>click me</button>		
 	</span>
 </div>
 
@@ -12,28 +12,3 @@
 <div ng-if='loading'>
 	Loading...
 </div>
-<div ng-if='!loading'>
-	<div class='imgBox'>
-	 	<img ng-src='{{pokemonData.sprites.front_default}}'>		
-		<p>{{ pokemonData.name }}</p>
-	</div>
-	<p> {{ speciesData.flavor_text_entries[1].flavor_text }}</p>
-	
-	<h3>Abilities</h3>
-	<p ng-repeat='ability in pokemonData.abilities'>{{ ability.ability.name }}</p>
-	
-	<h3>Stats</h3>
-	<p ng-repeat='stat in pokemonData.stats'>
-		{{ stat.stat.name }}: {{ stat.base_stat }}
-	</p>
-
-	<h3>Types</h3>
-	<p ng-repeat='type in pokemonData.types'>
-		{{ type.type.name }}
-	</p>
-
-	<h3>Category</h3>
-	<p>{{ speciesData.genera[0].genus }}</p>
-
-</div>
-
