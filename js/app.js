@@ -11,10 +11,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl: 'views/home.html',
 		controller: 'PokemonCtrl'
 	})
-	// .state('abilities', {
-	// 	url: '/abilities',
-	// 	templateUrl: 'abilities.html'
-	// })
+	.state('pokemon', {
+		url: '/pokemon',
+		templateUrl: 'pokemon.html',
+		controller: 'POkemonCtrl'
+	});
 
 }]);
 

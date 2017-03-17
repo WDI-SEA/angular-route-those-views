@@ -1,0 +1,13 @@
+div {
+	border: solid 1px black;
+}
+p,
+h1,
+h2,
+h3 {
+	border: solid 1px red;
+	box-sizing: border-box;
+}
+.img {
+	15em;
+}
