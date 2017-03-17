@@ -1,4 +1,4 @@
-var app = angular.module('BieberApp', ['ui.router']);
+var app = angular.module('BieberApp', ['ui.router', 'ngAnimate']);
 
 app.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
   $scope.gifs = [];

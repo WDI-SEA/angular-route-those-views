@@ -48,8 +48,34 @@ body {
 
 #gif {
   margin: 0;
+  padding: 0;
+}
+
+.gifImg {
+  height: 200px;
+  width: 400px;
+  margin: 0;
 }
 
 #spotify {
   padding-left: 0;
+}
+
+.ng-enter{
+ animation: slideInLeft .5s both ease-in;
+ transition: linear all;
+ opacity: 0;
+}
+
+.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.ng-leave{
+ animation: slideOutLeft 0.25s both ease-in;
+ transition: linear all;
+ opacity: 1;
+}
+.ng-leave.ng-leave-active {
+  opacity: 0;
 }
