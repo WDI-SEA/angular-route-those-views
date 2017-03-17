@@ -1,0 +1,25 @@
+<a class="btn btn-primary" href="/#/about">About</a>
+
+<h3>Enter a search term:</h3>
+<div>
+  <input type="text" ng-model="searchTerm">
+  <button ng-click="getDefinition(searchTerm)">Get</button>
+</div>
+
+
+<h2 class="text-center" ng-show="searchTerm" >You searched for: {{ searchTerm }}</h2>
+<div class="row">
+  <div class="col-xs-12" ng-repeat="data in searchData track by $index">
+    <div class="well">
+      <h4><a ng-href="/#/{{ searchTerm }}/{{ $index }}">{{ data.word }}</a></h4>
+      <p>{{ data.definition.substring(0,50) }}...</p>
+      <p>By <b>{{ data.author }}</b></p>
+      <button class="btn btn-primary">{{ data.thumbs_up }} <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+      <button class="btn btn-danger">{{ data.thumbs_down }} <i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+
+    </div>
+  </div>
+</div>
+
+<!-- ng-href="/#/{{ $index }}"  -->
+<!-- ng-click="getWord($index)" -->
