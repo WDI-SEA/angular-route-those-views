@@ -1,0 +1,25 @@
+<div>
+	<h1 class="text-center">Taqueria El Taquin</h1>
+	<h2 class="text-center">Autentica comida y botanas Mexicanas</h2>
+</div>
+
+<br>
+
+<div ng-controller="CarouselDemoCtrl" id="slides_control">
+    <div>
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <img ng-src="{{slide.image}}">
+          <div class="carousel-caption">
+<!--       Insert <h4>Slide {{$index+1}}</h4>  if wanting caption in slide-->
+          </div>
+        </slide>
+      </carousel>
+    </div>
+</div>
+
+<br>
+
+<div class="form-actions">
+    <button type="button" class="btn btn-default"><a href="/menu">Take a look at our menu!</a></button>
+</div>
