@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Taqueria El Taquin</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/menu">Our Menu</a></li>
+        <li><a href="/about">Hours & Location</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<br><br><br>
+
+<h1 class="text-center">Hours & Location:</h1>
+
+  <div class="container">
+    <h2>Address:</h2>
+      <h4>520 128th St SW, Ste B5, Everett, WA 98204</h4>
+
+        <div id="map" style="width:500px; height:300px;"></div>
+
+          <script>
+            function init() {
+              var myCenter = new google.maps.LatLng(47.880906,-122.241346);
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = {center: myCenter, zoom: 17};
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({position:myCenter});
+              marker.setMap(map);
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL9VkVGZPkLTa09R8kyphE0q8RxTrFUDc&callback=init"></script>
+
+
+          <br>
+
+        <div class="hours">
+          <h4 >Hours:</h4>
+            <ul>M-Th: 11:00AM-9:00PM</ul>
+            <ul>F-S: 11:00AM-10:00PM</ul>
+            <ul>Sun: 11:00AM-8:00PM</ul>
+        </div>
+  </div>
+
+<hr>
+
+<a class="backHome" href="/home">Home Page</a>
+</body>
+</html>

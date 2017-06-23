@@ -1,0 +1,53 @@
+  body, html {
+    background: #1F1C18; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1F1C18 , #8E0E00); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1F1C18 , #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    text-align: center;
+  }
+
+.form-actions {
+	text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    background: url("../img/chichen.jpg");
+
+    /* Set a specific height */
+    min-height: 280px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map {
+    display: inline-block;
+}
+
+.backHome {
+	color: silver;
+	text-shadow: 1px 1px 0px #222222;
+	text-decoration: underline;
+}
+
+#slides_control > div{
+  height: 400px;
+}
+img {
+  margin:auto;
+  width: 700px;
+  height: 400px;
+}
+#slides_control {
+  position:relative;
+  width: 700px;
+  left:50%;
+  top:20px;
+  margin-bottom: 200px;
+  margin-left:-350px;
+  margin-top: 50px;
+}
